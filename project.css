@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    height: 100vh;
+    background: url('https://img.resized.co/newstalk/eyJkYXRhIjoie1widXJsXCI6XCJodHRwczpcXFwvXFxcL21lZGlhLnJhZGlvY21zLm5ldFxcXC91cGxvYWRzXFxcLzIwMjBcXFwvMDlcXFwvMDMxNDQ2MzdcXFwvUEEtMzkzNDg3NjEtMTAyNHg2ODMuanBnXCIsXCJ3aWR0aFwiOjEyMDAsXCJoZWlnaHRcIjo2MjgsXCJkZWZhdWx0XCI6XCJodHRwczpcXFwvXFxcL3d3dy5uZXdzdGFsay5jb21cXFwvaW1hZ2VzXFxcL2RlZmF1bHRfbm9faW1hZ2UucG5nXCJ9IiwiaGFzaCI6Ijc2YjZhNzdlMzAxM2I4NzkzZWIxMDhmOTk4MTliOTVlMzY1NjY1YTUifQ==/pa-39348761-1024x683.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* position: relative; */
+}
+
+.opacity-background{
+    height: 100vh;
+    width: 100% ;
+    background-color: black;
+    opacity: 0.3;
+    position: absolute;
+}
+
+nav{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom right, rgb(255,183,0), rgb(255, 72, 0));
+    color: white;
+    padding: auto;
+    z-index: 5;
+}
+
+nav h1, .search, .sign {
+    margin: 5px 20px;
+}
+
+.search {
+    display: flex;
+    width: 50%;
+    position: relative;
+}
+
+nav i {
+    color: #fff;
+    margin: 0 10px;
+}
+
+.search input {
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+/* .search input:hover{
+    opacity: 1;
+} */
+
+.search input:focus {
+    opacity: 1;
+}
+
+/* ở đây anh dùng thêm focus, tức là sau khi mình chọn vào input thì trỏ chuột vẫn đang focus vào input thì khi mình
+bỏ hover thì ô input vẫn sáng, khi mình focus vào chỗ khác thì input sẽ quay về vị trí đầu */ 
+
+.search input.searchHover{
+    opacity: 1;
+}
+
+.sign {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.sign button{
+    height: 35px;
+    width: 49%;
+    border:none;
+    border-radius: 20px;
+    background: #fff;
+    color: #000;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.sign button:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.container{
+    position: relative;
+}
+
+.content-menu{
+    margin: auto;
+    position: relative;
+    width: 700px;
+    height: 300px;
+    left: 50px;
+    top: 180px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-menu .quote p {
+    font-size: 70px;
+    font-weight: 150;
+    font-style: italic;
+}
+
+.content-menu .multi-button {
+    width: 320px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-menu .button-menu button {
+    width: 180px;
+    height: 40px;
+    outline: none;
+    border: 2px solid orange;
+    border-radius: 30px;
+    background:none;
+}
+
+.button-menu1 {
+    background-color: orange !important;
+    color: white;
+}
+
+.button-menu2 {
+    color: orange;
+    transition:0.5s;
+}
+
+.button-menu2:hover{
+    background-color: orange !important;
+    color: white;
+    transition: 0.5s;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    padding: 10px 20px;
+    color: #fff;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom right, rgb(255,183,0), rgb(255, 72, 0));
+    display: flex;
+    justify-content: space-between;
+    line-height:120%;
+    font-size:18px;
+}
+
+footer div {
+    width: 25%;
+    margin: 0 20px;
+}
+
+footer ul, footer p {
+    margin-bottom: 15px;
+}
+
+footer div h2 {
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: #fff;
+}
+
+.social_media {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+/* Footer */
+
+.content{
+    width: 75%;
+    margin: 50px auto;
+    box-shadow: 1px 5px 10px #AAA;
+    padding:20px;
+    border-radius:1rem;
+    background-color: #fff;
+}
+
+.reason-title p {
+    margin: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.reason-border {
+    border-bottom: orange solid 5px;
+    width: 200px;
+    margin:20px auto;
+}
+
+.reason-details{
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.reason-details-row{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.reason-details-row img{
+    height:100%;
+    width: 25%;
+}
+
+.reason-details-row-describe{
+    width: 65%;
+    margin-top: 30px;
+}
+
+.reason-details-row-describe p{
+    font-size: 25px;
+}
+
+.blog{
+    height: 700px;
+    margin: 50px auto;
+    width: 100%;
+    position: relative;
+}
+
+.blog-background{
+    position: absolute;
+    height:100%;
+    width:100%;
+    background-color: orange;
+    opacity: 0.8;
+    border-radius: 1rem;
+}
+
+.blog-title{
+    height:90px;
+    padding: 30px;
+    text-align: center;
+    color:#fff;
+    position: relative;
+    font-size: 40px;
+}
+
+.blog-border{
+    position: relative;
+    border-bottom: #fff solid 5px;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.blog-content{
+    width: 90%;
+    height:500px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: auto;
+}
+
+.blog-content-column{
+    position: relative;
+    height: 100%;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: beige; */
+    opacity: 0.7;
+    border-radius:50px;
+    cursor: pointer;
+}
+
+.blog-content-column:hover{
+    opacity: 1;
+    transition: 0.5s;
+    transform:scale(1.1);
+}
+
+.blog-content-column img {
+    height:300px;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.blog-content-column p {
+    text-align: center;
+    font-size:30px;
+    color:#fff;
+}
+
+.founder{
+    margin: 20px;
+}
+
+.founder-title{
+    height:90px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+}
+
+.founder-border{
+    border-bottom: orange solid 5px;
+    width: 200px;
+    margin:20px auto;
+}
+
+.founder-content{
+    height:700px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.founder-content-row{
+    display: flex;
+    justify-content: space-around;
+    height:50%;
+    width:100%;
+    position: relative;
+}
+
+.founder-content-column{
+    height:100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: bisque; */
+    position: relative;
+}
+
+.founder-content-column img {
+    height:70%;
+    width: 100%;
+}
+
+.founder-content-column p{
+    font-size: 30px;
+    text-align: center;
+}
